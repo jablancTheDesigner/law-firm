@@ -10,13 +10,13 @@ const ServicesSection = styled.section`
 const ServiceCards = styled.div`
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 1rem;
+  flex-wrap: wrap;
 `;
 
 const ServiceCard = styled.div`
   background: white;
   padding: 30px;
-  width: 250px;
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 `;

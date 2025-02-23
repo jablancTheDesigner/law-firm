@@ -23,7 +23,7 @@ const LoginForm = () => {
   };
 
   return (
-    <div>
+    <div id="client-login">
       <h2>Client Login</h2>
       {error && <p style={{ color: "red" }}>{error}</p>}
       <form onSubmit={handleSubmit}>

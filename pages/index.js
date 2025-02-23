@@ -3,10 +3,12 @@ import Services from "../components/Services";
 import Testimonials from "../components/Testimonials";
 import AboutUs from "../components/AboutUs";
 import Footer from "../components/Footer";
+import Nav from "../components/Nav";
 
 const Home = () => {
     return (
         <>
+            <Nav />
             <Hero />
             <Services />
             <Testimonials />

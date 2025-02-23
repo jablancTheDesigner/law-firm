@@ -1,18 +1,13 @@
 import React from "react";
-import { useRouter } from "next/router";
+import Nav from "../Nav";
 
 const ClientPortalLayout = ({ children }) => {
-  const router = useRouter();
-
   return (
     <div>
       <header>
-        <h1>Black-Owned Law Firm - Client Portal</h1>
-        <nav>
-          <button onClick={() => router.push("/client/portal")}>Dashboard</button>
-          <button onClick={() => router.push("/client/profile")}>Profile</button>
-        </nav>
+        <Nav />
       </header>
+      <h2>Black-Owned Law Firm - Client Portal</h2>
       <main>{children}</main>
     </div>
   );
