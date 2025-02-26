@@ -17,13 +17,16 @@ const AboutText = styled.p`
 `;
 
 const AboutUs = () => (
+
   <AboutSection>
-    <AboutTitle>About Us</AboutTitle>
-    <AboutText>
-      We are a Black-owned law firm committed to providing high-quality legal services. We strive to make
-      justice accessible to everyone, regardless of their background. Our team of passionate lawyers is here
-      to guide you through legal challenges with care and expertise.
-    </AboutText>
+    <div className="container">
+      <AboutTitle>About Us</AboutTitle>
+      <AboutText>
+        We are a Black-owned law firm committed to providing high-quality legal services. We strive to make
+        justice accessible to everyone, regardless of their background. Our team of passionate lawyers is here
+        to guide you through legal challenges with care and expertise.
+      </AboutText>
+    </div>
   </AboutSection>
 );
 

@@ -10,7 +10,9 @@ const FooterSection = styled.footer`
 
 const Footer = () => (
   <FooterSection>
-    <p>&copy; 2025 Black-Owned Law Firm. All Rights Reserved.</p>
+    <div className="container">
+      <p>&copy; 2025 Black-Owned Law Firm. All Rights Reserved.</p>
+    </div>
   </FooterSection>
 );
 

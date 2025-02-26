@@ -11,8 +11,8 @@ const Home = () => {
             <Nav />
             <Hero />
             <Services />
-            <Testimonials />
             <AboutUs />
+            <Testimonials />
             <Footer />
         </>
     )

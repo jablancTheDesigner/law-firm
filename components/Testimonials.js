@@ -26,15 +26,17 @@ const TestimonialText = styled.p`
 
 const Testimonials = () => (
   <TestimonialsSection>
-    <h2>What Our Clients Say</h2>
-    <TestimonialCard>
-      <TestimonialText>"The team was professional, compassionate, and helped me through a tough time." </TestimonialText>
-      <ClientName>- John Doe</ClientName>
-    </TestimonialCard>
-    <TestimonialCard>
-      <TestimonialText>"I highly recommend them! They helped me win my case." </TestimonialText>
-      <ClientName>- Jane Smith</ClientName>
-    </TestimonialCard>
+    <div className="container">
+      <h2>What Our Clients Say</h2>
+      <TestimonialCard>
+        <TestimonialText>"The team was professional, compassionate, and helped me through a tough time." </TestimonialText>
+        <ClientName>- John Doe</ClientName>
+      </TestimonialCard>
+      <TestimonialCard>
+        <TestimonialText>"I highly recommend them! They helped me win my case." </TestimonialText>
+        <ClientName>- Jane Smith</ClientName>
+      </TestimonialCard>
+    </div>
   </TestimonialsSection>
 );
 

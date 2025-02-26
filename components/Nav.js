@@ -5,10 +5,13 @@ const Nav = () => {
     return (
         <nav>
             <h1>the<b>Law</b>Firm</h1>
-            <button onClick={() => router.push("/")}>Home</button>
-            <button onClick={() => router.push("/client/login")}>Login</button>
-            <button onClick={() => router.push("/client/portal")}>Dashboard</button>
-            <button onClick={() => router.push("/client/profile")}>Profile</button>
+            <div className="nav__inner">
+                <button onClick={() => router.push("/")}>Home</button>
+                <button onClick={() => router.push("/blog")}>Blog</button>
+                <button onClick={() => router.push("/client/login")}>Login</button>
+                <button onClick={() => router.push("/client/portal")}>Dashboard</button>
+                <button onClick={() => router.push("/client/profile")}>Profile</button>
+            </div>
         </nav>
     )
 }
