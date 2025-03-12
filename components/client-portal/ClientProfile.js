@@ -12,7 +12,7 @@ const ClientProfile = () => {
   };
 
   return (
-    <div>
+    <div className="container">
       <h2>Edit Your Profile</h2>
       <form>
         <label>Name</label>
@@ -34,10 +34,10 @@ const ClientProfile = () => {
         <button type="button" onClick={handleSave}>
           Save Changes
         </button>
+        <button onClick={() => router.push("/client/portal")}>
+          Back to Dashboard
+        </button>
       </form>
-      <button onClick={() => router.push("/client/portal")}>
-        Back to Dashboard
-      </button>
     </div>
   );
 };

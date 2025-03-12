@@ -17,10 +17,12 @@ nav {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   > .nav__inner{
     display:flex;
     gap: 1rem;
+    justify-content: center;
   }
 }
 
@@ -43,4 +45,149 @@ h2 {
   width: 100%;
   max-width: 768px;
   margin: 0 auto;
+}
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Font-family for body and headings */
+body {
+  font-family: 'Lora', serif;
+  background-color: #FFFFFF;
+  color: #000000;
+  line-height: 1.6;
+}
+
+/* Header styles */
+header {
+  background-color: #000000; /* Black */
+  color: #FFD700; /* Gold */
+  padding: 20px;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+header h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 2.5em;
+  letter-spacing: 2px;
+}
+
+/* Navigation styles */
+nav {
+  background-color: #222222;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #FFD700; /* Gold */
+  font-size: 1.2em;
+  padding: 10px 20px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #FFFFFF;
+  background-color: #FFD700; /* Gold */
+}
+
+/* Main content area */
+main {
+  margin: 20px;
+}
+
+/* Headings */
+h2, h3 {
+  color: #2C3E50; /* Deep Green or Navy Blue */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+/* Paragraphs */
+p {
+  font-size: 1.1em;
+  color: #34495E; /* Dark Gray */
+  line-height: 1.8;
+}
+
+/* Footer styles */
+footer {
+  background-color: #000000; /* Black */
+  color: #FFD700; /* Gold */
+  text-align: center;
+  padding: 10px;
+  font-size: 1em;
+}
+
+footer a {
+  color: #FFD700; /* Gold */
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Buttons */
+button {
+  background-color: #FFD700; /* Gold */
+  color: #000000;
+  padding: 15px 30px;
+  border: none;
+  font-size: 1.2em;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2C3E50; /* Deep Green or Navy Blue */
+  color: #FFFFFF;
+}
+
+/* Contact Section */
+.contact-form {
+  background-color: #F2F2F2; /* Light Gray */
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 2px solid #BDC3C7; /* Light Gray */
+  border-radius: 5px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #2C3E50; /* Deep Green or Navy Blue */
+}
+
+.contact-form button {
+  background-color: #2C3E50; /* Deep Green or Navy Blue */
+  color: #FFFFFF;
+  border-radius: 5px;
+  font-size: 1.1em;
 }

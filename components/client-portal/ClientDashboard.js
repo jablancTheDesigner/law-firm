@@ -1,16 +1,19 @@
 import React from "react";
 import { useRouter } from "next/router";
+import { useAppContext } from "../../context/appContext";
 
 const ClientDashboard = () => {
+  const {setIsSignedIn} = useAppContext();
   const router = useRouter();
 
   const logout = () => {
     // Logic to clear session or token can be added here.
+    setIsSignedIn(false);
     router.push("/client/login");
   };
 
   return (
-    <div>
+    <div class="container">
       <h2>Welcome to Your Dashboard</h2>
       <p>Your Case Details:</p>
       <ul>
