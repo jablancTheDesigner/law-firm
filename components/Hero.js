@@ -4,7 +4,7 @@ import styled from "styled-components";
 const HeroSection = styled.section`
   background: #333;
   color: white;
-  padding: 100px 0;
+  padding: 100px 20px;
   text-align: center;
 `;
 
