@@ -1,4 +1,4 @@
-import "../styles/globals.scss";
+import "../styles/globals.css";
 import {AppContextProvider} from "../context/appContext";
 import Nav from "../components/Nav";
 

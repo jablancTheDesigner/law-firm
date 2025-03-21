@@ -1,55 +1,55 @@
 import React from "react";
-import styled from "styled-components";
 
-const ServicesSection = styled.section`
-  padding: 50px 20px;
-  background: #f4f4f4;
-  text-align: center;
-`;
-
-const ServiceCards = styled.div`
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-`;
-
-const ServiceCard = styled.div`
-  background: white;
-  padding: 30px;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
-  flex: 1;
-`;
-
-const ServiceTitle = styled.h3`
-  margin-bottom: 15px;
-  color: #333;
-`;
-
-const ServiceDescription = styled.p`
-  color: #555;
-`;
-
-const Services = () => (
-  <ServicesSection>
-    <div className="container">
-      <h2>Our Legal Services</h2>
-      <ServiceCards>
-        <ServiceCard>
-          <ServiceTitle>Business Law</ServiceTitle>
-          <ServiceDescription>Legal advice and services for your growing business.</ServiceDescription>
-        </ServiceCard>
-        <ServiceCard>
-          <ServiceTitle>Criminal Defense</ServiceTitle>
-          <ServiceDescription>Protecting your rights and defending you in criminal cases.</ServiceDescription>
-        </ServiceCard>
-        <ServiceCard>
-          <ServiceTitle>Family Law</ServiceTitle>
-          <ServiceDescription>Guidance and support for family-related legal matters.</ServiceDescription>
-        </ServiceCard>
-      </ServiceCards>
-    </div>
-  </ServicesSection>
-);
+const Services = () => {
+  const featuredServices = [
+    {
+      title: "Business Law",
+      description: "Legal advice and services for your growing business.",
+    },
+    {
+      title: "Criminal Defense",
+      description: "Protecting your rights and defending you in criminal cases.",
+    },
+    {
+      title: "Family Law",
+      description: "Guidance and support for family-related legal matters.",
+    },
+  ]; 
+  return (
+    <section className="bg-midnight text-white">
+      <div className="container max-w-xl p-6 py-24 mx-auto space-y-24 lg:px-8 lg:max-w-7xl">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-3xl font-bold tracking-tight text-center sm:text-5xl dark:text-gray-900">Rain, Sleet, or Snow...Our lawyers are trained to go</h2>
+        </div>
+        <div className="grid lg:gap-8 lg:grid-cols-2 lg:items-center">
+          <div>
+            <h3 className="text-2xl font-bold tracking-tight sm:text-3xl dark:text-gray-900">Top Services</h3>
+            <p className="mt-3 text-lg dark:text-gray-600">Ne dicta praesent ocurreret has, diam theophrastus at pro. Eos etiam regione ut, persius eripuit quo id. Sit te euismod tacimates.</p>
+            <div className="mt-12 space-y-12">
+              {featuredServices.map((service, index) => (
+                <div className="flex">
+                  <div className="flex-shrink-0">
+                    <div className="flex items-center justify-center w-12 h-12 rounded-md dark:bg-violet-600 dark:text-gray-50">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-7 h-7">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <div className="ml-4">
+                    <h4 className="text-lg font-medium leading-6 dark:text-gray-900">{service.title}</h4>
+                    <p className="mt-2 dark:text-gray-600">{service.description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div aria-hidden="true" className="mt-10 lg:mt-0">
+            <img src="https://source.unsplash.com/random/360x480" alt="" className="mx-auto rounded-lg shadow-lg dark:bg-gray-500" />
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+};
 
 export default Services;
