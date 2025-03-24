@@ -31,11 +31,8 @@ const ClientProfile = () => {
           required
         />
         <br />
-        <button type="button" onClick={handleSave}>
+        <button type="button" onClick={handleSave} className="border-1 px-4 py-2 mt-4">
           Save Changes
-        </button>
-        <button onClick={() => router.push("/client/portal")}>
-          Back to Dashboard
         </button>
       </form>
     </div>

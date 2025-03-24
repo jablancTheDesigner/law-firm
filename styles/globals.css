@@ -5,3 +5,7 @@
   --color-tahiti: #3ab7bf;
   --color-bermuda: #78dcca;
 }
+
+#__next, body, html {
+  height: 100%;
+}

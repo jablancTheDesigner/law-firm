@@ -26,20 +26,20 @@ const Nav = () => {
         <div className="container flex justify-between h-16 mx-auto">
             <div className="flex">
                 <div rel="noopener noreferrer" href="#" aria-label="Back to homepage" className="flex items-center p-2 gap-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" className="flex-shrink-0 w-5 h-5 rounded-full dark:text-gray-50">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" className="flex-shrink-0 w-5 h-5 rounded-full text-tahiti">
                         <path d="M18.266 26.068l7.839-7.854 4.469 4.479c1.859 1.859 1.859 4.875 0 6.734l-1.104 1.104c-1.859 1.865-4.875 1.865-6.734 0zM30.563 2.531l-1.109-1.104c-1.859-1.859-4.875-1.859-6.734 0l-6.719 6.734-6.734-6.734c-1.859-1.859-4.875-1.859-6.734 0l-1.104 1.104c-1.859 1.859-1.859 4.875 0 6.734l6.734 6.734-6.734 6.734c-1.859 1.859-1.859 4.875 0 6.734l1.104 1.104c1.859 1.859 4.875 1.859 6.734 0l21.307-21.307c1.859-1.859 1.859-4.875 0-6.734z"></path>
                     </svg>
-                    <h2 className="font-bold" >{brandName}</h2>
+                    <h2 className="font-bold text-midnight">{brandName}</h2>
                 </div>
                 <ul className="items-stretch hidden space-x-3 lg:flex">
                     {links.map((link, index) => (
-                        <li className="flex">
+                        <li className="flex text-midnight">
                             <NavButton key={index} onClick={() => router.push(link.href)}>{link.label}</NavButton>
                         </li>
                     ))}
                 </ul>
             </div>
-            <div className="items-center flex-shrink-0 hidden lg:flex">
+            <div className="items-center flex-shrink-0 hidden lg:flex text-midnight">
                 {!isSignedIn && (
                     <button className="px-8 py-3 font-semibold rounded dark:bg-violet-600 dark:text-gray-50" onClick={() => router.push("/client/login")}>Log in</button>
                 )}

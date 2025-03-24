@@ -5,8 +5,8 @@ const Hero = () => {
 	const router = useRouter();
 	return (
   <section className="bg-tahiti text-midnight">
-	<div className="container mx-auto flex flex-col items-center px-4 py-16 text-center md:py-32 md:px-10 lg:px-32 xl:max-w-3xl">
-		<h1 className="text-4xl font-bold leading-none sm:text-5xl">Empowering
+	<div className="container mx-auto flex flex-col items-center px-4 py-16 text-center md:py-32 md:px-10 lg:px-32 xl:max-w-3xl min-h-[700px] justify-center">
+		<h1 className="text-4xl font-bold leading-none sm:text-7xl">Empowering
 			<span className="dark:text-violet-600">Your</span> Legal Rights
 		</h1>
 		<p className="px-8 mt-8 mb-12 text-lg">Providing trusted legal services</p>

@@ -17,7 +17,7 @@ const Services = () => {
   ]; 
   return (
     <section className="bg-midnight text-white">
-      <div className="container max-w-xl p-6 py-24 mx-auto space-y-24 lg:px-8 lg:max-w-7xl">
+      <div className="container max-w-xl p-6 py-24 mx-auto space-y-24 lg:px-8 lg:max-w-5xl">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold tracking-tight text-center sm:text-5xl dark:text-gray-900">Rain, Sleet, or Snow...Our lawyers are trained to go</h2>
         </div>
@@ -44,7 +44,7 @@ const Services = () => {
             </div>
           </div>
           <div aria-hidden="true" className="mt-10 lg:mt-0">
-            <img src="https://source.unsplash.com/random/360x480" alt="" className="mx-auto rounded-lg shadow-lg dark:bg-gray-500" />
+            <img src="https://source.unsplash.com/random/360x480" alt="" className="mx-auto rounded-lg shadow-lg bg-tahiti w-full max-w-[360px] h-[480px]" />
           </div>
         </div>
       </div>
